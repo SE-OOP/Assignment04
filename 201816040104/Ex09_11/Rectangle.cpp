@@ -35,7 +35,7 @@ void Rectangle::setPerimeter(double length,double width)
 void Rectangle::setArea(double length,double width)
 {
 
-        area = length * width;
+        area = length * width; 
 }
 double Rectangle::getLength()
 {
