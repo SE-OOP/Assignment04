@@ -7,7 +7,7 @@ using namespace std;
 class DeckOfCards
 {
 public:
-	explicit DeckOfCards(const Card &);
+	explicit DeckOfCards();
 	void shuffle();//洗牌
 	vector <Card> getDeck();
 	void display();//展示牌组
