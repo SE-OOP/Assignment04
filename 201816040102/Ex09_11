@@ -1,0 +1,85 @@
+#ifndef RECTANGLE_H
+#define RECTANGLE_H
+
+class Rectangle
+{
+	public:
+		explicit Rectangle(double = 1.0,double = 1.0);
+		void setRectangle(double,double);
+		double getLength() const;
+		double getWidth() const;
+		void PrintPerimeter() const;
+		void PrintArea() const;
+	private:
+		double length;
+		double width;
+};
+
+#endif 
+
+#include <iostream>
+#include <iomanip>
+#include <stdexcept>
+using namespace std;
+#include "Rectangle.h"
+
+Rectangle::Rectangle(double length,double width)
+{
+	setRectangle(length,width);
+}
+void Rectangle::setRectangle(double l,double w)
+{
+	if(l>0.0&&l<20.0) 
+		length = l;
+	else
+		throw invalid_argument("length must be 0-20");
+	if(w>0.0&&w<20.0)
+		width = w;
+	else
+		throw invalid_argument("wide must be 0-20");
+}
+
+double Rectangle::getLength() const
+{
+	return length;
+}
+
+double Rectangle::getWidth() const
+{
+	return width;
+}
+void Rectangle::PrintPerimeter() const
+{
+	
+	cout<< ((length + width)*2);
+	cout << "\n";
+}
+void Rectangle::PrintArea() const
+{
+	
+	cout<< (getLength()*getWidth());
+	cout << "\n";
+}
+
+
+#include <iostream>
+using namespace std;
+#include "Rectangle.h"
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() 
+{
+
+	Rectangle rec;
+	double a, b;
+	cout<<"please input length and wide:\n";
+	cin >> a>> b;
+	rec.setRectangle(a, b);
+	cout <<"the perimeter is:";
+	rec.PrintPerimeter();
+	cout<< "the area is:";
+	rec.PrintArea();
+	
+	return 0;
+}
