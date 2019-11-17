@@ -1,0 +1,21 @@
+#include <iostream>
+#include"Rectangle.h"
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+    Rectangle rectangle1;
+    Rectangle rectangle2(5,5);//建立两个Rectangle对象
+    cout<<fixed<<setprecision(1);//保留一位小数
+    /*分别输出两个对象的长、宽、面积和周长*/
+    cout<<"the length of rectangle1："<<rectangle1.getlength()<<endl;
+    cout<<"the width of rectangle1："<<rectangle1.getwidth()<<endl;
+    cout<<"the area of rectangle1："<<rectangle1.area()<<endl;
+    cout<<"the perimeter of rectangle1："<<rectangle1.perimeter()<<endl;
+    cout<<"the length of rectangle2："<<rectangle2.getlength()<<endl;
+    cout<<"the width of rectangle2："<<rectangle2.getwidth()<<endl;
+    cout<<"the area of rectangle2："<<rectangle2.area()<<endl;
+    cout<<"the perimeter of rectangle1："<<rectangle2.perimeter()<<endl;
+    return 0;
+}//end main
