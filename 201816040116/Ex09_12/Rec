@@ -1,0 +1,26 @@
+#ifndef RECTANGLE_H_INCLUDED
+#define RECTANGLE_H_INCLUDED
+#include"Point.h"
+class Rectangle
+{
+    public:
+        Rectangle(Point ,Point,Point ,Point);
+        void setlaw(Point,Point,Point ,Point);
+        double getlength();
+        double getwidth();
+        double Perimeter(double,double);
+        double Area(double,double);
+        void Square(double,double);
+        void display();
+    private:
+        Point xy1;
+        Point xy2;
+        Point xy3;
+        Point xy4;
+        double length;
+        double width;
+        double perimeter;
+        double area;
+        double square;
+};
+#endif // RECTANGLE_H_INCLUDED
