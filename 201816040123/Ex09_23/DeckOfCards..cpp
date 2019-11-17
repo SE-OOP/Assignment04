@@ -7,7 +7,7 @@
 #include "DeckOfCards.h"
 using namespace std;
 
-DeckOfCards::DeckOfCards(const Card &a)//初始化一个牌组
+DeckOfCards::DeckOfCards()//初始化一个牌组
 {
     currentCard=0;
     for(int i=0;i<52;i++)
