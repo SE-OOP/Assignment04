@@ -1,0 +1,21 @@
+#include <iostream>
+#include"Rectangle.h"
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+
+    Rectangle rectangle(0,0,3,0,3,4,0,4);//建立Rectangle对象
+    cout<<fixed<<setprecision(1);//保留一位小数
+    /*分别输出两个对象的长、宽、面积和周长，并判断是否是正方形*/
+    cout<<"the length of rectangle："<<rectangle.getlength()<<endl;
+    cout<<"the width of rectangle："<<rectangle.getwidth()<<endl;
+    cout<<"the area of rectangle："<<rectangle.area()<<endl;
+    cout<<"the perimeter of rectangle："<<rectangle.perimeter()<<endl;
+    if(rectangle.square()==0)
+    cout<<"该长方形不是正方形"<<endl;
+    else
+        cout<<"该长方形是正方形"<<endl;
+    return 0;
+}//end main
