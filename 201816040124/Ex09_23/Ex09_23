@@ -1,0 +1,18 @@
+#include<vector>
+#include <iostream>
+#include "DeckOfCards.h"
+#include "Card.h"
+using namespace std;
+int main()
+{
+    int i;
+    DeckOfCards poker; //定义一个DeckOfCards 对象
+    poker.shuffle();//洗牌
+    for (i=0;i<52;i++) //输出
+    {
+        cout <<poker.dealCard().toString()<<endl;
+        if (poker.moreCards()==0) //判断是否继续
+            break;
+    }
+    return 0;
+}//主函数结束
