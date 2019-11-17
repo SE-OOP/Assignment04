@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+#include<string>
+#include <iomanip>
+#include"Time.h"
+int main()
+{
+   Time time;;//定义一个对象
+   int i;
+   cout<<setfill('0')<<setw(2)<<time.getHour()<<":"<<setw(2)<<time.getMinute()<<":"<<setw(2)<<time.getSecond()<<endl;//打印24小时格式时间
+   for(i=0;i<=15;i++)
+   {
+       cout<<setfill('0')<<setw(2)<<time.getHour()<<":"<<setw(2)<<time.getMinute()<<":"<<setw(2)<<time.getSecond()<<endl;//打印24小时格式时间
+       time.tick();//测试tick函数来使秒数加1
+   }
+    return 0;
+}
