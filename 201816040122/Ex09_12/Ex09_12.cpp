@@ -1,41 +1,23 @@
 #include <iostream>
-using namespace std;
-class Rectangel
-{
-public:
-   explicit Rectangel(double=0,double=0,double=0,double=0,double=0,double=0,double=0,double=0);
-    void setDate(double,double,double,double,double,double,double,double);
-    double Check()const;
-    void setSide();
-    double Perimeter()const;
-    double Area()const;
-    void display();
-    void setDatex1(double);
-    void setDatey1(double);
-    void setDatex2(double);
-    void setDatey2(double);
-    void setDatex3(double);
-    void setDatey3(double);
-    void setDatex4(double);
-    void setDatey4(double);
-    double getDatex1()const;
-    double getDatey1()const;
-    double getDatex2()const;
-    double getDatey2()const;
-    double getDatex3()const;
-    double getDatey3()const;
-    double getDatex4()const;
-    double getDatey4()const;
 
-private:
-    double x1;
-    double y1;
-    double x2;
-    double y2;
-    double x3;
-    double y3;
-    double x4;
-    double y4;
-    double length;
-    double width;
-};
+using namespace std;
+#include"Rectangel2.h"
+int main()
+{
+    double a,b,c,d,e,f,g,h;
+    Rectangel2 s;
+    cout<<"请输入下x1,y1,x2,y2,x3,y3,x4,y4的值"<<endl;
+    cin>>a>>b>>c>>d>>e>>f>>g>>h;
+    s.setDate(a,b,c,d,e,f,g,h);
+    s.display();
+    s.setSide();
+    if(s.Check())
+    {
+        cout<<"周长为："<<s.Perimeter()<<endl;
+        cout<<"面积为："<<s.Area()<<endl;
+    }
+    else
+        cout<<"错误输入"<<endl;
+
+    return 0;
+}
