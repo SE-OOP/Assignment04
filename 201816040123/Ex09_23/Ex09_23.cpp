@@ -5,7 +5,7 @@
 int main()
 {
     Card a(0,0);
-    DeckOfCards b(a);
+    DeckOfCards b;
 
     cout << "洗牌前:" << endl;
     b.display();//输出当前牌的顺序
