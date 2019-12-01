@@ -1,4 +1,4 @@
-// Exercise 9.18 Solution: Rectangle.h
+// Exercise 9.12 Solution: Rectangle.h
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 
