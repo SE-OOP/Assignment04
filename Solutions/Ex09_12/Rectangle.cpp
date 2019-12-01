@@ -1,4 +1,4 @@
-// Exercise 9.18 Solution: Rectangle.cpp
+// Exercise 9.12 Solution: Rectangle.cpp
 // Member-function definitions for class Rectangle.
 #include <iostream> 
 #include <iomanip> 
